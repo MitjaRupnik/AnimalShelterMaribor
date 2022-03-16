@@ -1,0 +1,30 @@
+@import '../../var'; 
+
+footer {
+    background-color: $lightGrey;
+    padding: 40px;
+    border-radius: 20px 20px 0 0;
+    border: 1px solid $midGrey;
+    box-shadow: 3px 3px 0px $midGrey;
+    text-align: center;
+    
+    img {
+        
+        width: 275px;
+        margin-bottom: 45px;
+    }
+    
+    .info-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 550px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 35px;
+
+        p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    }
+}

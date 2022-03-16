@@ -1,0 +1,35 @@
+<main>
+    <article>
+        <div class="card-cointainer" *ngFor="let animal of animals">
+            <img src="{{ animal.image }}" alt="">
+            <div class="card-info">
+                <h3>{{ animal.name }}</h3>
+                <p>{{ animal.gender }}, {{ animal.age }} years</p>
+                <div class="card-info-since">
+                    <p class="p-small">IN THE SHELTER SINCE:</p>
+                    <p>{{ animal.arrival | date }}</p>
+                </div>
+                <button (click)="onSelect(animal)">PICK ME</button>
+            </div>
+        </div>
+    </article>
+    <aside>
+        <div class="info-container">
+            <img src="{{ selectedAnimal.image }}" alt="">
+            <h3>{{ selectedAnimal.name }}</h3>
+                    <p>{{ selectedAnimal.gender }}, {{ selectedAnimal.age }} years</p>
+                    <div class="card-info-since">
+                        <p class="p-small">IN THE SHELTER SINCE:</p>
+                        <p>{{ selectedAnimal.arrival | date }}</p>
+                    </div>
+            <p class="selectedAnimal-desc">{{ selectedAnimal.description }}</p>
+            <div *ngIf="selectedAnimal.isVaxed === true; then vaxedTrue else vaxedFalse"></div>
+            <ng-template #vaxedTrue>
+                <p><span class="vaxed-icon">&#9745;</span> {{selectedAnimal.name}} is fully vaxed.</p>
+            </ng-template>
+            <ng-template #vaxedFalse>
+                <p><span class="vaxed-icon">&#9746;</span> {{selectedAnimal.name}} is not vaxed.</p>
+            </ng-template>
+        </div>
+    </aside>
+</main>

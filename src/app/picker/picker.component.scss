@@ -1,0 +1,105 @@
+@import '../../var'; 
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    article {
+        max-width: 850px;
+        width: 100%;
+        text-align: center;
+
+        .card-cointainer {
+            max-width: 200px;
+            width: 100%;
+            margin: 0px 20px 40px 20px;
+            display: inline-block;
+            text-align: center;
+            
+            img {
+                width: 150px;
+                height: 150px;
+                margin-bottom: -60px;
+                border-radius: 50%;
+                border: 1px solid $midGrey;
+                box-shadow: 3px 3px 0px $midGrey;
+            }
+        
+            .card-info {
+                width: 100%;
+                background-color: $lightGrey;
+                padding: 75px 25px 25px 25px;
+                border-radius: 15px;
+                border: 1px solid $midGrey;
+                box-shadow: 3px 3px 0px $midGrey;
+        
+                button {
+                    width: 100%;
+                    padding: 14px 28px;
+                    font-weight: 900;
+                    color: $hText;
+                    background-color: $lightBrown;
+                    border: 1px solid $darkBrown;
+                    box-shadow: 2px 2px 0px $darkBrown;
+                    border-radius: 10px;
+                    cursor: pointer;
+        
+                    &:active {
+                        background-color: $darkBrown;
+                        transform: translateY(2px) translateX(2px);
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .card-info-since {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        p {
+            font-size: 15px;
+        }
+
+        .p-small {
+            font-size: 10px;
+            font-weight: 900;
+        }
+    }
+
+    aside {
+        max-width: 350px;
+        width: 100%;
+
+        .info-container {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: $lightGrey;
+            padding: 30px;
+            border-radius: 20px 0 20px 20px;
+            border: 1px solid $midGrey;
+            box-shadow: 3px 3px 0px $midGrey;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 20px 0 20px 20px;
+            border: 1px solid $midGrey;
+            box-shadow: 3px 3px 0px $midGrey;
+            margin-bottom: 15px;
+        }
+
+        .selectedAnimal-desc {
+            margin-bottom: 15px;
+        }
+
+        .vaxed-icon {
+            font-size: 17px;
+        }
+    }
+}

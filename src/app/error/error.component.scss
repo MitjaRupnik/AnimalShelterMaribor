@@ -1,0 +1,27 @@
+@import '../../var'; 
+
+#error-container {
+    min-height: 500px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    #error-contents {
+        p:first-child {
+            font-size: 80px;
+            margin-bottom: 20px;
+            color: $lightBrown;
+        }
+    
+        h2 {
+            margin-bottom: 10px;
+        }
+    
+        p:last-child {
+            max-width: 200px;
+            margin: auto;
+        }
+    }
+}

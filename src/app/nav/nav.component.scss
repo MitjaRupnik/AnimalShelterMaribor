@@ -1,0 +1,41 @@
+@import '../../var'; 
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: $lightGrey;
+    padding: 15px 30px;
+    margin-bottom: 40px;
+    border-radius: 0 0 20px 20px;
+    border: 1px solid $midGrey;
+    box-shadow: 3px 3px 0px $midGrey;
+
+    img {
+        width: 50px;
+        display: inline-block;
+    }
+
+    h1 {
+        display: inline-block;
+        font-size: 24px;
+        line-height: 1.2em;
+        margin-left: 20px;
+        color: $hText;
+
+        .p_highlight {
+            color: $darkBrown;
+        }
+    }
+    ul {
+        color: $hText;
+        margin-left: auto;
+        min-width: 320px;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
+}

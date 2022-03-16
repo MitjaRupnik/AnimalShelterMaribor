@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap');
+@import './var'; 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, Helvetica, sans-serif;
+}
+
+// -- TEXT
+h1, h2, h3 {font-family: Inter, Helvetica, sans-serif; color: $hText; font-weight: 900; line-height: 1.5em; text-shadow: 1px 1px 0px $midGrey;}
+h1 {font-size: 35px}
+h2 {font-size: 28px}
+h3 {font-size: 22px}
+p {font-size: 16px; font-family: Inter, Helvetica, sans-serif; color: $pText ;font-weight: 400; line-height: 1.5em;}
+
+// -- MISC
+
+a {
+    text-decoration: none;
+    color: $pText;
+    opacity: 50%;
+
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+.active {
+    border-bottom: 3px solid $lightBrown;
+    opacity: 100%;
+}
+
+@media (max-width: 576px) { 
+    // -- TEXT
+    h1, h2, h3 {font-family: Inter, Helvetica, sans-serif; font-weight: 900; line-height: 1.5em;}
+    h1 {font-size: 24px}
+    h2 {font-size: 20px}
+    h3 {font-size: 18px}
+    p {font-size: 14px; font-family: Inter, Helvetica, sans-serif; font-weight: 400; line-height: 1.5em;}
+}
